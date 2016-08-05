@@ -16,7 +16,11 @@
   height: 4rem;
 }
 
-
+.images {
+    min-width: 300px;
+    min-height: 300px;
+    margin-left: 200px;
+}
 .random {
   margin-top: 2rem;
 }
