@@ -2,6 +2,7 @@
 .title {
   display: flex;
   display: row;
+  justify-content: center;
 }
 
 .randomSearch {
