@@ -1,7 +1,12 @@
 angular
-    .module('HomeController')
+    .module('wit')
     .controller('HomeController', HomeController);
 
-function HomeController($scope, HomeController) {
-    $scope.view = {};
+function HomeController($scope, RedditService) {
+    $scope.redditThoughts = [];
+    $scope.searchAPIs = function() {
+        RedditService.getThoughts($scope.search).then(thoughts => {
+            $scope.redditThoughts = thoughts;
+        })
+    }
 }

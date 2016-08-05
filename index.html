@@ -2,11 +2,11 @@
 <html ng-app="wit">
   <head>
     <meta charset="utf-8">
-    <title>wit</title>
+    <title>Witty Wisdom</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body ng-app>
+  <body ng-controller="HomeController">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-4 col-xs-offset-4 title">
@@ -44,7 +44,9 @@
       </div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js" charset="utf-8"></script>
+    <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="js/services/reddit.js"></script>
     <script type="text/javascript" src="js/services/giphy.js"></script>
+    <script type="text/javascript" src="js/controllers/home.js"></script>
   </body>
 </html>
