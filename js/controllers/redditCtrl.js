@@ -2,6 +2,6 @@ angular
     .module('wit')
     .controller('RedditController', RedditController);
 
-function RedditController($scope, RedditControllerService) {
+function RedditController($scope, RedditService) {
     $scope.view = {};
 }
