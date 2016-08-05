@@ -2,11 +2,11 @@ angular
     .module('wit')
     .controller('HomeController', HomeController);
 
-function HomeController($scope, HomeController, RedditService) {
+function HomeController($scope, RedditService) {
     $scope.redditThoughts = [];
-    $scope.searchAPIs = function(word) {
-        RedditService.getThoughts(word).then(thoughts => {
-                $scope.redditThoughts = thoughts;
-            }
+    $scope.searchAPIs = function() {
+        RedditService.getThoughts($scope.search).then(thoughts => {
+            $scope.redditThoughts = thoughts;
         })
+    }
 }
