@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/amandamontanapearce/DevelopDenver-Hack/issues"
   },
-  "homepage": "https://github.com/amandamontanapearce/DevelopDenver-Hack#readme"
+  "homepage": "https://github.com/amandamontanapearce/DevelopDenver-Hack#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
