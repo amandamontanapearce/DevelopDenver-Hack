@@ -6,8 +6,7 @@ function RedditService($http) {
     return {
         getThoughts: function(query) {
             return $http.get(`https://www.reddit.com/r/Showerthoughts/search.json?q=${query}&restrict_sr=on&sort=relevance&t=all`).then(thoughts => {
-                console.log(thoughts.data.data.children);
-                return thoughts.data.children
+                return thoughts.data.data.children
             })
         }
     }
