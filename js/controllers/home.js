@@ -1,5 +1,5 @@
 angular
-    .module('wit')
+    .module('HomeController')
     .controller('HomeController', HomeController);
 
 function HomeController($scope, HomeController) {
