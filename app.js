@@ -1,0 +1,2 @@
+angular
+    .module('wit');
