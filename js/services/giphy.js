@@ -8,5 +8,5 @@ function GiphyService($http) {
 GiphyService.$inject = ['$http']
 
 angular
-  .module('app')
+  .module('wit')
   .service('GiphyService', GiphyService)
