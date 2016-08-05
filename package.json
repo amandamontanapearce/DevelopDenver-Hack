@@ -1,0 +1,19 @@
+{
+  "name": "witty-wisdom",
+  "version": "1.0.0",
+  "description": "A generator of wisdom",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandamontanapearce/DevelopDenver-Hack.git"
+  },
+  "author": "Amanda, Evan and Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandamontanapearce/DevelopDenver-Hack/issues"
+  },
+  "homepage": "https://github.com/amandamontanapearce/DevelopDenver-Hack#readme"
+}
