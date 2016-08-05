@@ -1,2 +1,2 @@
 angular
-    .module('wit');
+    .module('wit', []);
