@@ -1,0 +1,19 @@
+/*header*/
+.title {
+  display: flex;
+  display: row;
+}
+
+.randomSearch {
+  display: flex;
+  display: column;
+}
+
+img {
+  margin-top: 2rem;
+  height: 4rem;
+}
+
+.random {
+  margin-top: 2rem;
+}
