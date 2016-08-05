@@ -9,4 +9,5 @@ function RedditService() {
         }
     }
 }
+
 RedditService.$inject = ['$http'];
