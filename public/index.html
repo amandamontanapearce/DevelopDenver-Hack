@@ -9,9 +9,10 @@
     <body ng-controller="HomeController">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 title">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Witty Wisdom</h1>
                     <img id="smiley" src="http://66.media.tumblr.com/9334fb6c0591ae2b756711416affa0c1/tumblr_inline_nwp2n0RgQj1s9clfh_500.png">
-                    <h1>Witty Wisdom</h1>
+
                 </div>
                 <div class="col-xs-12">
                     <div class="row">
@@ -29,7 +30,7 @@
                                     <form class="form">
                                         <div class="form-group">
                                             <input type="text" name="search" value="" placeholder="Search here" ng-model="search">
-                                            <a ng-click="searchAPIs(); toggleThought=true;" class="btn btn-danger">Searchs Now!</a>
+                                            <a ng-click="searchAPIs(); toggleThought=true;" class="btn btn-danger">Search Now!</a>
                                         </div>
                                     </form>
                                 </div>
@@ -38,10 +39,8 @@
                         <div class="row" ng-show="toggleThought">
                             <div class="col-xs-8 col-xs-offset-2">
                                 <div class="well" ng-repeat="thought in redditThoughts track by $index">
-                                    <h3 class="text-center">{{thought.title}}</h3>
-                                    <div class="container">
-                                            <img class="images" class="img-responsive" ng-src="{{thought.image}}"/>
-                                    </div>
+                                    <h4 class="text-center">{{thought.title}}</h4>
+                                    <img class="images" class="img-responsive" ng-src="{{thought.image}}"/>
                                 </div>
                             </div>
                         </div>

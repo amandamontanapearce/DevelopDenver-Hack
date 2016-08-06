@@ -11,9 +11,12 @@
   justify-content: center;
 }
 
-#smiley img {
-  margin-top: 2rem;
-  height: 4rem;
+.text-center {
+    text-align: center;
+}
+
+#smiley {
+    margin-left: 450px;
 }
 
 .images {
