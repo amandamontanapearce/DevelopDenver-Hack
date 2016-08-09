@@ -12,6 +12,7 @@
       <header>
         <img id="smiley" src="http://66.media.tumblr.com/9334fb6c0591ae2b756711416affa0c1/tumblr_inline_nwp2n0RgQj1s9clfh_500.png">
         <h1 id="title">Witty Wisdom</h1>
+        <p>A profound thought generator, now with giphs!</p>
       </header>
 
   <!-- <div class="randomSearch">
@@ -26,7 +27,7 @@
       <div class="search">
           <form class="form">
             <div class="form-group">
-            <input type="text" name="search" value="" placeholder="Example: FIRE" ng-model="search" ng-change="change()">
+            <input type="text" class="form-control" name="search" value="" placeholder="search for anything - EX: jazz" ng-model="search">
             <a ng-click="searchAPIs(); toggleThought=true;" class="btn btn-danger">Search</a>
             </div>
           </form>
@@ -36,11 +37,13 @@
 
   <div class="row" ng-show="toggleThought">
     <div class="col-xs-8 col-xs-offset-2">
-      <div class="well" ng-repeat="thought in redditThoughts track by $index">
-        <h3 class="text-center">{{thought.title}}</h3>
-        <a ng-href="{{thought.imageURL}}" target="_blank"><img class="images" class="img-responsive" ng-src="{{thought.image}}"/></a>
-        <p><a ng-href="{{ thought.url }}" target="_blank">by /u/{{ thought.author }}</a></p>
+      <div class="well"> <!-- ng-repeat="thought in redditThoughts track by $index" -->
+        <h3 class="text-center">{{redditThought.title}}</h3>
+        <a ng-href="{{redditThought.imageURL}}" target="_blank"><img class="images" class="img-responsive" ng-src="{{redditThought.image}}"/></a>
+        <p><a ng-href="{{ redditThought.url }}" target="_blank">by /u/{{ redditThought.author }}</a></p>
     </div>
+      <a ng-click="nextThought()"><h2>Click for more wisdom on {{ search }}</h2></a>
+      <p>You can also search for something new above!</p>
     </div>
   </div>
 
