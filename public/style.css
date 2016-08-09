@@ -11,26 +11,35 @@
   justify-content: center;
 }
 
-#smiley img {
-  margin-top: 2rem;
-  height: 4rem;
+
+header {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.well {
+  width: 100%;
+  padding: 0, 50px;
+  text-align: center;
+}
+
+.well img {
+  display: block;
+  margin: auto;
+}
+
+h2 {
+  margin: 20px;
 }
 
 .images {
     min-width: 300px;
     min-height: 300px;
-    margin-left: 200px;
-}
-.random {
-  margin-top: 2rem;
 }
 
 .search {
   display: flex;
   display: column;
   justify-content: center;
-}
-
-h2 {
-  margin: 20px;
 }
