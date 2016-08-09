@@ -7,7 +7,7 @@ function HomeController($scope, $http, RedditService) {
     $scope.searchAPIs = function() {
         RedditService.getThoughts($scope.search).then(thoughts => {
             thoughts.forEach(ea => {
-                $http.get("http://api.giphy.com/v1/gifs/search?q=" + ea.data.title + "&api_key=dc6zaTOxFJmzC").then(giph => {
+                $http.get("https://api.giphy.com/v1/gifs/search?q=" + ea.data.title + "&api_key=dc6zaTOxFJmzC").then(giph => {
                     $scope.redditThoughts.push({
                         title: ea.data.title,
                         author: ea.data.author,
@@ -23,7 +23,7 @@ function HomeController($scope, $http, RedditService) {
       $scope.redditThoughts = [];
         RedditService.getThoughts($scope.search).then(thoughts => {
             thoughts.forEach(ea => {
-                $http.get("http://api.giphy.com/v1/gifs/search?q=" + ea.data.title + "&api_key=dc6zaTOxFJmzC").then(giph => {
+                $http.get("https://api.giphy.com/v1/gifs/search?q=" + ea.data.title + "&api_key=dc6zaTOxFJmzC").then(giph => {
                     $scope.redditThoughts.push({
                         title: ea.data.title,
                         author: ea.data.author,
