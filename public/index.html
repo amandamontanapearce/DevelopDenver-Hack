@@ -27,7 +27,7 @@
       <div class="search">
           <form class="form">
             <div class="form-group">
-            <input type="text" class="form-control" name="search" value="" placeholder="search for anything - EX: jazz" ng-model="search">
+            <input type="text" class="form-control" name="search" value="" placeholder="search for anything - EX: jazz" ng-model="search" ng-change="toggleThought=false;">
             <a ng-click="searchAPIs(); toggleThought=true;" class="btn btn-danger">Search</a>
             </div>
           </form>
